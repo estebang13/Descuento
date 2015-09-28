@@ -2,12 +2,11 @@ var Converter = require("csvtojson").Converter;
 var json2csv = require("json2csv");
 var fs = require('fs');
 var converter = new Converter({});
-var fields = ['ID','Negociacion'];
+var fields = ['Record ID','Negociacion'];
 converter.on("end_parsed", function (jsonArray) {
    var k = jsonArray;
 for (var key in jsonArray) {
   if (jsonArray.hasOwnProperty(key)) {
-     var id= JSON.stringify(jsonArray[key].ID);
      var negociaciones=jsonArray[key].Negociacion;
      for (var key in negociaciones){
      if(negociaciones[key].Familia == 120 && (negociaciones[key].SubFamilia == 66)){
