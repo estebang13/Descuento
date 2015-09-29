@@ -3,6 +3,7 @@ node_modules
 build
 dist
 .env
+.csv
 build/**
 dist/**
 
