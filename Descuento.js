@@ -9,7 +9,7 @@ converter.on("end_parsed", function (jsonArray) {
 for (var key in jsonArray) { //Se recorren las cuentas para obtener los datos de cada una
   if (jsonArray.hasOwnProperty(key)) {
      var negociaciones=jsonArray[key].Negociacion; // Se obtiene los Datos de Negociacion
-     for (var key1 in negociaciones){ //Se recorren las negociaciones y se buscan las considencias para cambiarlo
+     for (var key1 in negociaciones){ //Se recorren las negociaciones y se buscan que cumplen las condiciones para cambiarlo
      if(negociaciones[key1].Familia == 120 && (negociaciones[key1].SubFamilia == 66)){
      negociaciones[key1].Descuento = 12 ; 
      }
