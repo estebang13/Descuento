@@ -1,7 +1,7 @@
 {
   "name": "descuentos",
   "version": "1.0.0",
-  "description": "Condusal Neutracen 12",
+  "description": "Cambia los valores en la parte de negociación.",
   "main": "descuento.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
